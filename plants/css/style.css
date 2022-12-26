@@ -44,6 +44,8 @@
     color: #636060;
   }
 
+/* Header style start */
+
   header {
     position: fixed;
     top: 0;
@@ -61,6 +63,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 42px;
   }
 
   .header-logo-wrapper {
@@ -73,6 +76,9 @@
   .header-list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   .header-item {
@@ -98,9 +104,24 @@
     color: #E06733;
   }
 
-  .header-logo-link {
+  .header-logo-text {
     font-family: 'Inika';
     line-height: 21px;
     color: #000000;
     text-decoration: none;
+    margin: 0;
+    margin-left: 1px;
   }
+
+  .header-logo-pic {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-logo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 7px;
+  }
+
+  /* Header style end */
