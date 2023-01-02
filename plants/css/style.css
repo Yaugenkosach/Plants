@@ -185,15 +185,11 @@ h1 {
 
 .welcome-text {
   font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 35px;
-color: #636060;
-}
-
-p {
-  margin: 0;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
 }
 
 .welcome-button {
@@ -206,4 +202,51 @@ p {
 
   /* Welcome style end */
 
+  /* About style start */
 
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 666px;
+    background: #FFFFFF;
+}
+
+.about-wrapper {
+  display: flex;
+  ALIGN-ITEMS: center;
+  justify-content: space-between;
+}
+
+.about-info {
+  margin-right: 153px;
+  display: inline-grid;
+  align-content: space-between;
+}
+
+h2 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.about-title {
+  margin-bottom: -11px;
+  color: #E06733;
+}
+
+.about-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+}
+
+.houseplant1 {
+  margin-top: 5px;
+}
+/* About style end */
