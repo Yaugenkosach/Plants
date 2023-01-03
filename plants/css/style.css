@@ -44,6 +44,11 @@
     color: #636060;
   }
 
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
 /* Header style start */
 
   header {
@@ -205,6 +210,7 @@ h1 {
   /* About style start */
 
 .about {
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -225,6 +231,7 @@ h1 {
 }
 
 h2 {
+  margin-top: 27px;
   font-family: 'Inika';
   font-style: normal;
   font-weight: 400;
@@ -238,6 +245,7 @@ h2 {
 }
 
 .about-text {
+  margin-top: -4px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -249,4 +257,109 @@ h2 {
 .houseplant1 {
   margin-top: 5px;
 }
+
 /* About style end */
+
+/* Service style start */
+
+.service {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 1300px;
+  background: #EDF2EC;
+}
+
+.service-content {
+  margin-bottom: 46px;
+  padding-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.service-title {
+  width: 306px;
+  margin-right: 138px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.service-button {
+  padding: 0;
+  margin-right: 35px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  width: 161px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
+.service-button:last-child {
+  margin-right: 0;
+}
+
+.service-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-item {
+  width: 330px;
+  height: 450px;
+}
+
+.item-pic {
+  margin-bottom: -5px;
+}
+
+.service-item-info {
+  padding-top: 10px;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.service-item-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #E06733;
+}
+
+.service-item-text {
+  margin-bottom: 34px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  text-align: center;
+}
+
+.item5, .item4, .item6 {
+  margin-top: 55px;
+}
+
+button:hover, .header-link:focus, .header-link:active {
+  cursor: pointer;
+  color: #EDF2EC;
+  background: #E06733;
+  tansition: all .3s linear;
+}
+
+/* Service style end */
