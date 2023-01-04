@@ -441,7 +441,7 @@ details[open] > summary:before {
  transform: scale(1,-1);
 }
 
-details[open] > summary {
+.prices-accordeon[open] > summary {
   border-radius: 20px;
   background: #D6E7D2;
 }
@@ -506,3 +506,72 @@ details{
 }
 
 /* Prices style end */
+
+/* Contacts style start */
+
+.contacts {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 550px;
+  background: #EDF2EC;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts-title-text {
+  margin: 0;
+  padding-left: 46px;
+  padding-top: 5px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.contacts-content {
+  padding-top: 93px;
+}
+
+.contacts-accordeon {
+  width: 450px;
+  height: 50px;
+  background: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+}
+
+.contacts-accordeon-text:before {
+  right: 34px;
+  top: 17px;
+  background: url("/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/svg/accordion_btn_contacts.svg") no-repeat 100% 100% / 16px 16px;
+  width: 16px;
+  height: 16px;  
+  content: "";
+  position: absolute;
+  transition: transform .3s;
+ }
+
+ .contacts-accordeon-text {
+  padding: 5px 0px 16px 21px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+ }
+
+ .contacts-accordeon[open] > summary {
+  border-radius: 0px;
+  background: #C1E698;
+}
+
+/* Contacts style end */
