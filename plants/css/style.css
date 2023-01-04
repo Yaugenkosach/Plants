@@ -357,9 +357,152 @@ h2 {
 
 button:hover, .header-link:focus, .header-link:active {
   cursor: pointer;
-  color: #EDF2EC;
+  color: #FFFFFF;
   background: #E06733;
   tansition: all .3s linear;
 }
 
 /* Service style end */
+
+/* Prices style start */
+
+.prices {
+  width: 100%;
+  height: 560px;
+  background: #FFFFFF;
+}
+
+.prices-wrapper {
+  display: flex;
+  flex-flow: row;
+}
+
+.prices-content {
+  margin-right: 437px;
+}
+
+.prices-content-title {
+  padding-top: 8px;
+}
+
+.prices-content-title-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.prices-content-items {
+  margin-top: 60px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 332px;
+  height: 282.01px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+
+summary::-webkit-details-marker{display:none;}
+
+summary::-moz-list-bullet{list-style-type:none;}
+
+summary::marker{display:none;}
+
+summary {
+  display:grid;
+  padding: 16px 0 16px 40px;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+summary:before {
+ right: 40px;
+ top: 16px;
+ background: url("/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/svg/accordion_btn.svg") no-repeat 100% 100% / 16px 16px;
+ width: 16px;
+ height: 16px;  
+ content: "";
+ position: absolute;
+ transition: transform .3s;
+}
+
+details[open] > summary:before {
+ transform: scale(1,-1);
+}
+
+details[open] > summary {
+  border-radius: 20px;
+  background: #D6E7D2;
+}
+
+details{
+  display:block;
+  width: 250px;
+  height: 50px;
+  background: #EDF2EC;;
+  border-radius: 20px;
+}
+
+.prices-accordeon {
+  padding-bottom: 32px;
+}
+
+.prices-accordeon:last-child {
+  padding-bottom: 0;
+}
+
+.prices-call {
+  height: 405px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.prices-call-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+}
+
+.prices-call-content {
+  margin-top: 4px;
+}
+
+.prices-call-button {
+  width: 162px;
+  height: 50px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.pricesleafs {
+  width: 152px;
+  height: 174.99px;
+}
+
+/* Prices style end */
