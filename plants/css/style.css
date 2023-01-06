@@ -361,7 +361,7 @@ button:hover, .header-link:focus, .header-link:active {
   cursor: pointer;
   color: #FFFFFF;
   background: #E06733;
-  tansition: all .3s linear;
+  transition: all .3s linear;
 }
 
 /* Service style end */
@@ -409,11 +409,17 @@ button:hover, .header-link:focus, .header-link:active {
   border-radius: 20px;
 }
 
-summary::-webkit-details-marker{display:none;}
+summary::-webkit-details-marker {
+  display:none;
+}
 
-summary::-moz-list-bullet{list-style-type:none;}
+summary::-moz-list-bullet {
+  list-style-type:none;
+}
 
-summary::marker{display:none;}
+summary::marker {
+  display:none;
+}
 
 summary {
   display:grid;
@@ -640,3 +646,5 @@ details{
   width: 32px;
   height: 32px;
 }
+
+/* Footer style end */
