@@ -28,7 +28,9 @@
 
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
+
   *, *::before, *::after {
     box-sizing: inherit;
   }
@@ -575,3 +577,66 @@ details{
 }
 
 /* Contacts style end */
+
+/* Footer style start */
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 130px;
+  padding-bottom: 13px;  
+}
+
+.footer-link {
+  display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  padding-left: 20px;
+}
+
+.footer-copyright-link {
+  padding-left: 0;
+}
+
+.insta-link {
+  padding-left: 0;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+}
+
+.link:hover, .header-link:focus, .header-link:active {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.footer-ico {
+  width: 32px;
+  height: 32px;
+}
