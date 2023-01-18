@@ -139,6 +139,35 @@
     margin-bottom: 7px;
   }
 
+  .header-burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+  }
+
+  .burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+  }
+
+  .burger-line-first {
+    top: 0;
+  }
+
+  .burger-line-second {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger-line-third {
+    bottom: 0;
+  }
+
   /* Header style end */
 
   
@@ -648,3 +677,72 @@ details{
 }
 
 /* Footer style end */
+
+
+/* Media start */
+
+@media screen and (max-width: 767px) {
+  .header-burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .wrapper {
+    padding: 0 50px 0 50px;
+  }
+
+  .header-wrapper {
+    padding-top: 36px;
+  }
+
+  .header-logo-wrapper {
+    padding-bottom: 4px;
+  }
+
+  .welcome-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .leafs {
+    width: 101%;
+    padding-left: 40px;
+    padding-bottom: 98px;
+  }
+
+  .welcome-leafs {
+    width: 49%;
+    margin 0;
+  }
+
+  
+  .welcome {
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+  }
+
+  .welcome-info {
+    width: 51%;
+    height: 50%;
+    margin: 0;
+    padding-top: 23px;
+    padding-bottom: 71px;
+  }
+
+  .welcome-text-p {
+    padding-top: 15px;
+  }
+
+}
