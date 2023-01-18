@@ -741,8 +741,49 @@ details{
     padding-bottom: 71px;
   }
 
-  .welcome-text-p {
+  #welcome-text-p {
     padding-top: 15px;
   }
 
+  .about {
+    min-height: 666px;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding-bottom: 95px;
+  }
+
+  .about-info {
+    margin: 0;
+  }
+
+  .about-title {
+    margin: 0;
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .about-title-text {
+    margin: 0;
+    font-size: 35px;
+    line-height: 46px;
+    padding-left: 149px;
+    padding-right: 149px;
+    padding-top: 38px;
+    padding-bottom: 34px;
+    text-align: center;
+  }
+
+  .about-houseplant {
+    display: flex;
+    justify-content: center;
+    padding-top: 42px;
+  }
+
+  .houseplant1 {
+    width: 54%;
+  }
 }
