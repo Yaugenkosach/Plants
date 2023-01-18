@@ -786,4 +786,94 @@ details{
   .houseplant1 {
     width: 54%;
   }
+
+
+
+  .service-content {
+    flex-direction: column;
+    align-items: normal;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin: 0;
+  }
+
+  .service-title {
+    width: 50%;
+    padding-bottom: 13px;
+  }
+
+  #service-title-text {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .service-button {
+    margin-right: 33px;
+  }
+
+  .service-items {
+    padding-top: 11px;
+    padding-bottom: 31px;
+  }
+
+  .service-item {
+    width: calc(50% - 53px);
+    height: 100%;
+    margin: 0;
+    padding-bottom: 37px;
+  }
+
+  .service-item-info {
+    padding-top: 7px;
+  }
+
+  .service-item-text {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: revert;
+  }
+
+  .service {
+    height: 100%;
+  }
+
+  .item-pic {
+    display: none;
+  }
+
+  .img-item1 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/first-original.jpg);
+  }
+
+  .img-item2 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/second-original.jpg);
+  }
+
+  .img-item3 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/third-original.jpg);
+  }
+
+  .img-item4 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/fourth-original.jpg);
+  }
+
+  .img-item5 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/fifth-original.jpg);
+  }
+
+  .img-item6 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/sixth-original.jpg);
+  }
 }
