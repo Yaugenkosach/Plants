@@ -922,4 +922,35 @@ details{
   .pricesleafs {
     width: 100%;
   }
+
+  .contacts {
+    height: 100%;
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 42px;
+  }
+
+  .contacts-pic {
+    display: none;
+  }
+
+  .contacts-pic-tablet {
+    width: 200px;
+    height: 248px;
+    margin-left: 20px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/contact_woman_tablet_backgr.png);
+  }
+
+  .contacts-title-text {
+    padding: 0;
+  }
+
+  .contacts-content {
+    padding-top: 98px;
+    padding-bottom: 250px;
+  }
 }
