@@ -876,4 +876,50 @@ details{
     height: 350px;
     background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/sixth-original.jpg);
   }
+
+  .prices {
+    min-height: 585px;
+  }
+
+  .prices-content {
+    margin: 0;
+  }
+
+  .prices-content-title {
+    padding-top: 14px;
+    padding-left: 15px;
+  }
+
+  #prices-content-title-text {
+    Font-family: Inter;
+    font-weight: 700;
+    Font-size: 35px;
+    Line-height: 42px;
+    color: #000000;
+  }
+
+  .prices-content-items {
+    margin-top: 57px;
+  }
+
+  .prices-call-text {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .prices-call {
+    height: 100%;
+    margin: 0;
+    padding-top: 141px;
+  }
+
+  .prices-call-content {
+    margin-top: 0px;
+    padding-top: 28px;
+    padding-bottom: 34px;
+  }
+
+  .pricesleafs {
+    width: 100%;
+  }
 }
