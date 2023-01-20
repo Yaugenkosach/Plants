@@ -1040,7 +1040,7 @@ details{
 
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 766px) {
   .wrapper {
     padding: 0 25px 0 25px;
   }
@@ -1089,5 +1089,44 @@ details{
 
   .welcome-wrapper {
     padding-top: 31px;
+  }
+
+  .about {
+    height: 100%;
+    min-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .about-wrapper {
+    padding-bottom: 29px;
+  }
+
+  .about-title-text {
+    font-family: Inika;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    padding: 30px 0px 0 0;
+  }
+
+  .about-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: -2px;
+  }
+
+  .about-text-content {
+    margin-bottom: 0;
+  }
+
+  .about-houseplant {
+    padding-top: 0;
+  }
+
+  .houseplant1 {
+    width: 45%;
+    margin-top: 0;
   }
 }
