@@ -1191,6 +1191,7 @@ details{
 
   .prices {
     min-height: 100%;
+    height: 100%;
     padding-bottom: 6px;
   }
 
@@ -1276,8 +1277,36 @@ details{
     padding-top: 20px;
   }
 
+  .contacts-title-text {
+    font-size: 25px;
+    line-height: 33px;
+    padding-top: 25px;
+  }
+
+  .contacts-content {
+    padding-top: 80px;
+    padding-bottom: 133px;
+  }
 
   .contacts-accordeon {
-    width: 304px;
+    width: 300px;
+  }
+
+  .contacts-accordeon-text {
+    padding-left: 18px;
+  }
+
+  .contacts-accordeon-text:before {
+    right: 22px;
+    top: 18px;
+  }
+
+  .contacts-pic-tablet {
+    width: 100px;
+    height: 124px;
+    margin-left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
   }
 }
