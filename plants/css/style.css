@@ -1309,4 +1309,16 @@ details{
     background-repeat: no-repeat;
     margin-right: 5px;
   }
+
+  .footer-center {
+    padding-bottom: 0;
+  }
+
+  .footer-left {
+    padding-top: 9px;
+  }
+
+  .footer-date {
+    padding-right: 3px;
+  }
 }
