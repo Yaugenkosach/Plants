@@ -8,7 +8,6 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -41,7 +40,17 @@
                         <a href="#contacts" class="header-link">Contacts</a>
                     </li>
                 </ul>
+                <div class="header-nav-close">
+                    <span class="header-nav-close-line"></span>
+                    <span class="header-nav-close-line"></span>
+                </div>
             </nav>
+            <span class="header-burger burger">
+                <span class="burger-line burger-line-first"></span>
+                <span class="burger-line burger-line-second"></span>
+                <span class="burger-line burger-line-third"></span>
+                <span class="burger-line burger-line-fourth"></span>
+            </span>
         </div>
     </header>
     <main class="main">
@@ -52,10 +61,10 @@
                 </div>
                 <div class="welcome-info">
                     <div class="welcome-title">
-                        <h1>We grow <span class="title-green">plants</span> and give you oxygen</h1>
+                        <h1 class="welcome-title-text">We grow <span class="title-green">plants</span> and give you oxygen</h1>
                     </div>
                     <div class="welcome-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p id="welcome-text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                     <button class="welcome-button">learn more</button>
                 </div>
@@ -66,10 +75,10 @@
             <div class="wrapper about-wrapper">
                 <div class="about-info">
                     <div class="about-title">
-                        <h2><span class="title-green">We are</span> professional experienced <span class="title-green">gardeners</span></h2>
+                        <h2 class="about-title-text"><span class="title-green">We are</span> professional experienced <span class="title-green">gardeners</span></h2>
                     </div>
                     <div class="about-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p class="about-text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </div>
                 </div>
                 <div class="about-houseplant">
@@ -82,7 +91,7 @@
             <div class="wrapper service-wrapper">
                 <div class="service-content">
                     <div class="service-title">
-                        <h2>Service and our projects</h2>
+                        <h2 id="service-title-text">Service and our projects</h2>
                     </div>
                     <div class="service-buttons">
                         <button class="service-button button-gardens">Gardens</button>
@@ -93,43 +102,55 @@
 
                 <div class="service-items">
                     <div class="service-item item1">
-                        <img src="img/item1.png" alt="item1" class="item-pic">
+                        <div class="img-item1">
+                            <img src="img/item1.png" alt="item1" class="item-pic item-pic1">
+                        </div>
                         <div class="service-item-info">
                             <h3 class="service-item-title">Garden care</h3>
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
                     <div class="service-item item2">
+                        <div class="img-item2">
                         <img src="img/item2.png" alt="item2" class="item-pic">
+                        </div>
                         <div class="service-item-info">
                             <h3 class="service-item-title">Planting</h3>
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
                     <div class="service-item item3">
+                        <div class="img-item3">
                         <img src="img/item3.png" alt="item3" class="item-pic">
+                        </div>
                         <div class="service-item-info">
                             <h3 class="service-item-title">Lawn care</h3>
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
                     <div class="service-item item4">
+                        <div class="img-item4">
                         <img src="img/item4.png" alt="item4" class="item-pic">
+                        </div>
                         <div class="service-item-info">
                             <h3 class="service-item-title">Planting</h3>
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
                     <div class="service-item item5">
+                        <div class="img-item5">
                         <img src="img/item5.png" alt="item5" class="item-pic">
+                        </div>
                         <div class="service-item-info">
                             <h3 class="service-item-title">Garden care</h3>
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
                     <div class="service-item item6">
+                        <div class="img-item6">
                         <img src="img/item6.png" alt="item6" class="item-pic">
-                        <div class="service-item-info">
+                        </div>
+                        <div class="service-item-info service-item-info-planting">
                             <h3 class="service-item-title">Planting</h3>
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
@@ -142,16 +163,16 @@
             <div class="wrapper prices-wrapper">
                 <div class="prices-content">
                     <div class="prices-content-title">
-                        <h2 class="prices-content-title-text">Prices</h2>
+                        <h2 id="prices-content-title-text">Prices</h2>
                     </div>
                     <div class="prices-content-items">
-                        <details class="prices-accordeon">
+                        <details class="prices-accordeon prices-accordeon-1">
                             <summary class="prices-accordeon-title">Basics</summary>
                         </details>
                         <details class="prices-accordeon">
                             <summary class="prices-accordeon-title">Standard</summary>
                         </details>
-                        <details class="prices-accordeon">
+                        <details class="prices-accordeon prices-accordeon-3">
                             <summary class="prices-accordeon-title">Pro care</summary>
                         </details>
                     </div>
@@ -183,6 +204,7 @@
                         <summary class="contacts-accordeon-text">City</summary>
                     </details>
                 </div>
+                <div class="contacts-pic-tablet"></div>
             </div>
         </section>
     </main>
@@ -228,5 +250,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

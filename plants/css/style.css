@@ -139,6 +139,40 @@
     margin-bottom: 7px;
   }
 
+  .header-burger {
+    display: none;
+    width: 40px;
+    height: 24px;
+    position: relative;
+  }
+
+  .burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #717171;
+    position: absolute;
+    left: 0;
+  }
+
+  .burger-line-first {
+    top: 0;
+  }
+
+  .burger-line-second {
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
+  .burger-line-third {
+    top: 66%;
+    transform: translateY(-33%);
+  }
+
+  .burger-line-fourth {
+    bottom: 0;
+  }
+
   /* Header style end */
 
   
@@ -648,3 +682,643 @@ details{
 }
 
 /* Footer style end */
+
+
+/* Media start */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-burger {
+    display: block;
+  }
+
+  .header-nav {
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #DCE9D9;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+
+  .header-nav-active {
+    transform: translateX(0);
+  }
+
+  .header-nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+
+  .header-nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #717171;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .header-nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .header-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .header-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-link {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .wrapper {
+    padding: 0 50px 0 50px;
+  }
+
+  .header-wrapper {
+    padding-top: 36px;
+  }
+
+  .header-logo-wrapper {
+    padding-bottom: 4px;
+  }
+
+  .welcome-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .leafs {
+    width: 101%;
+    padding-left: 40px;
+    padding-bottom: 98px;
+  }
+
+  .welcome-leafs {
+    width: 49%;
+    margin: 0;
+  }
+
+  
+  .welcome {
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+  }
+
+  .welcome-info {
+    width: 51%;
+    height: 50%;
+    margin: 0;
+    padding-top: 23px;
+    padding-bottom: 71px;
+  }
+
+  #welcome-text-p {
+    padding-top: 15px;
+  }
+
+  .about {
+    min-height: 666px;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding-bottom: 95px;
+  }
+
+  .about-info {
+    margin: 0;
+  }
+
+  .about-title {
+    margin: 0;
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .about-title-text {
+    margin: 0;
+    font-size: 35px;
+    line-height: 46px;
+    padding-left: 149px;
+    padding-right: 149px;
+    padding-top: 38px;
+    padding-bottom: 34px;
+    text-align: center;
+  }
+
+  .about-houseplant {
+    display: flex;
+    justify-content: center;
+    padding-top: 42px;
+  }
+
+  .houseplant1 {
+    width: 54%;
+  }
+
+
+
+  .service-content {
+    flex-direction: column;
+    align-items: normal;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin: 0;
+  }
+
+  .service-title {
+    width: 50%;
+    padding-bottom: 13px;
+  }
+
+  #service-title-text {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .service-button {
+    margin-right: 33px;
+  }
+
+  .service-items {
+    padding-top: 11px;
+    padding-bottom: 31px;
+  }
+
+  .service-item {
+    width: calc(50% - 53px);
+    height: 100%;
+    margin: 0;
+    padding-bottom: 37px;
+  }
+
+  .service-item-info {
+    padding-top: 7px;
+  }
+
+  .service-item-text {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: revert;
+  }
+
+  .service {
+    height: 100%;
+  }
+
+  .item-pic {
+    display: none;
+  }
+
+  .img-item1 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/first-original.jpg);
+  }
+
+  .img-item2 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/second-original.jpg);
+  }
+
+  .img-item3 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/third-original.jpg);
+  }
+
+  .img-item4 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/fourth-original.jpg);
+  }
+
+  .img-item5 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/fifth-original.jpg);
+  }
+
+  .img-item6 {
+    width: 280px;
+    height: 350px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/sixth-original.jpg);
+  }
+
+  .prices {
+    min-height: 585px;
+  }
+
+  .prices-content {
+    margin: 0;
+  }
+
+  .prices-content-title {
+    padding-top: 14px;
+    padding-left: 15px;
+  }
+
+  #prices-content-title-text {
+    Font-family: Inter;
+    font-weight: 700;
+    Font-size: 35px;
+    Line-height: 42px;
+    color: #000000;
+  }
+
+  .prices-content-items {
+    margin-top: 57px;
+  }
+
+  .prices-call-text {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .prices-call {
+    height: 100%;
+    margin: 0;
+    padding-top: 141px;
+  }
+
+  .prices-call-content {
+    margin-top: 0px;
+    padding-top: 28px;
+    padding-bottom: 34px;
+  }
+
+  .pricesleafs {
+    width: 100%;
+  }
+
+  .contacts {
+    height: 100%;
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 42px;
+  }
+
+  .contacts-pic {
+    display: none;
+  }
+
+  .contacts-pic-tablet {
+    width: 200px;
+    height: 248px;
+    margin-left: 20px;
+    background-image: url(/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/contact_woman_tablet_backgr.png);
+  }
+
+  .contacts-title-text {
+    padding: 0;
+  }
+
+  .contacts-content {
+    padding-top: 98px;
+    padding-bottom: 250px;
+  }
+
+  .footer-wrapper {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 30px;
+    color: #000000;
+  }
+
+  .link-rss {
+    padding: 0;
+  }
+
+  .footer-center {
+    margin-top: -11px;
+    padding-bottom: 11px;
+  }
+
+}
+
+@media screen and (max-width: 766px) {
+  .wrapper {
+    padding: 0 25px 0 25px;
+  }
+
+  .header {
+    height: 100%;
+    padding-top: 37px;
+  }
+
+  .header-burger {
+    margin-top: -11px;
+  }
+
+  .welcome-leafs {
+    display: none;
+  }
+
+  .welcome-title-text {
+    Font-size: 25px;
+    line-height: 35px;
+  }
+
+  .welcome-text {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+
+  #welcome-text-p {
+    padding-top: 4px;
+  }
+
+  .welcome-info {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 24px;
+  }
+
+  .welcome-button {
+    width: 100px;
+    height: 34px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .welcome-wrapper {
+    padding-top: 31px;
+  }
+
+  .about {
+    height: 100%;
+    min-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .about-wrapper {
+    padding-bottom: 29px;
+  }
+
+  .about-title-text {
+    font-family: Inika;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    padding: 30px 0px 0 0;
+  }
+
+  .about-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: -2px;
+  }
+
+  .about-text-content {
+    margin-bottom: 0;
+  }
+
+  .about-houseplant {
+    padding-top: 0;
+  }
+
+  .houseplant1 {
+    width: 45%;
+    margin-top: 0;
+  }
+
+  .service-item {
+    display: contents;
+  }
+
+  .service-item-text {
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-top: 10px;
+  }
+
+  .service-items {
+    flex-direction: column;
+    padding-bottom: 27px;
+  }
+
+  .service-title {
+    width: 60%;
+    margin-right: 0;
+  }
+
+  #service-title-text {
+    font-family: Inika;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    margin: 0;
+  }
+
+  .service-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 26px;
+  }
+
+  .service-button {
+    margin-right: 10px;
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .button-planting {
+    margin-top: 9px;
+  }
+
+  .service-item-info {
+    padding-bottom: 3px;
+    padding-top: 9px;
+    margin-bottom: 34px;
+    width: 85%;
+    height: 100%;
+  }
+
+  .service-item-info-planting {
+    margin-bottom: 0;
+  }
+
+  .prices {
+    min-height: 100%;
+    height: 100%;
+    padding-bottom: 6px;
+  }
+
+  .prices-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .prices-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #prices-content-title-text {
+    Font-size: 25px;
+    Line-height: 30px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .prices-content-title {
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .prices-content-items {
+    width: 224px;
+    height: 235px;
+    margin-top: 16px;
+  }
+
+  details {
+    width: 180px;
+    height: 50px;
+  }
+
+  summary {
+    font-size: 15px;
+    padding-left: 31px;
+  }
+
+  summary::before {
+    right: 39px;
+    top: 18px;
+  }
+
+  .prices-accordeon-1 {
+    margin-top: 11px;
+    padding-top: 2px;
+  }
+
+  .prices-accordeon-3 {
+    margin-bottom: 11px;
+  }
+
+  .prices-call-pic {
+    display: none;
+  }
+
+  .prices-call {
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .prices-call-text {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .prices-call-button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .prices-call-content {
+    padding-top: 20px;
+  }
+
+  .contacts-title-text {
+    font-size: 25px;
+    line-height: 33px;
+    padding-top: 25px;
+  }
+
+  .contacts-content {
+    padding-top: 80px;
+    padding-bottom: 133px;
+  }
+
+  .contacts-accordeon {
+    width: 300px;
+  }
+
+  .contacts-accordeon-text {
+    padding-left: 18px;
+  }
+
+  .contacts-accordeon-text:before {
+    right: 22px;
+    top: 18px;
+  }
+
+  .contacts-pic-tablet {
+    width: 100px;
+    height: 124px;
+    margin-left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+  }
+
+  .footer-center {
+    padding-bottom: 0;
+  }
+
+  .footer-left {
+    padding-top: 9px;
+  }
+
+  .footer-date {
+    padding-right: 3px;
+  }
+}
