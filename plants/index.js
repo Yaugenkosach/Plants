@@ -19,3 +19,24 @@
         }
     }
 }());
+
+(function () {
+    document.querySelectorAll('.prices-accordeon-section').forEach(function(section) {
+        section.addEventListener('click', function(event) {
+            
+            if (event.target.closest('.prices-accordeon-section').classList.contains('opened')) {
+                section.classList.remove('opened');
+              return;
+            } else {
+                document.querySelectorAll('.prices-accordeon-section').forEach(function(section) {
+                    section.classList.remove('opened')
+                })
+
+            event.target.closest('.prices-accordeon-section').classList.add('opened')
+            return
+        }
+        })
+    })
+
+}())
+
