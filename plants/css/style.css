@@ -714,10 +714,157 @@ details{
   color: #717171;
  }
 
- .contacts-accordeon[open] > summary {
+ .active .contacts-accordeon-text {
   border-radius: 0px;
   background: #C1E698;
 }
+
+.active .contacts-accordeon {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.active .contacts-accordeon-text:before {
+  right: 34px;
+  top: 17px;
+  background: url("/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/drop_btn.png") no-repeat 100% 100% / 16px 16px;
+  width: 16px;
+  height: 16px;  
+  content: "";
+  position: absolute;
+  transition: transform .3s;
+ }
+
+ .city-container {
+  position: relative;
+  top: -12px;
+  display: none;
+  flex-direction: column;
+  padding-right: 49px;
+  padding-left: 21px;
+  padding-top: 13px;
+  background-color: #DCE9D9;
+ }
+
+ .active .city-container {
+  display: flex;
+ }
+
+ .city-list {
+  list-style-type: none;
+  padding: 0 0 0 6px;
+ }
+
+ .city-link {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #499A18;
+ }
+
+ .city-link:hover, .city-link:focus {
+  color: #717171;
+  cursor: pointer;
+}
+
+ .city-item {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 6px;
+ }
+
+ .canandaigua {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .NewYork {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .Yonkers {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .Sherrill {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .cityopen {
+  display: flex;
+ }
+
+ .cityopen-acc {
+  background: #C1E698;
+ }
+
+ .city-info-key {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #000000;
+  padding-right: 20px;
+ }
+
+ .city-info-value {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #717171;
+ }
+
+ .city-info-items {
+  display: flex;
+  justify-content: center;
+  padding-right: 87px;
+  padding-bottom: 20px;
+ }
+
+ .city-info-btn {
+  width: 122px;
+  height: 26px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  background-color: #EDF2EC;
+ }
+
+ .city-info-number {
+  text-decoration: none;
+  font-family: 'Inika';
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  color: #717171;
+ }
 
 /* Contacts style end */
 

@@ -40,3 +40,54 @@
 
 }())
 
+(function () {
+    const contactsAccordeon = document.querySelector('.contacts-accordeon');
+    contactsAccordeon.addEventListener('click', () => {
+        if (contactsAccordeon.classList.contains('active')) {
+            contactsAccordeon.classList.remove('active');
+        } else {
+            contactsAccordeon.classList.add('active');
+        }
+
+    });
+    
+}());
+
+
+
+
+function CanandaiguaOpen() {
+    document.querySelector('.NewYork').classList.remove('cityopen');
+    document.querySelector('.Yonkers').classList.remove('cityopen');
+    document.querySelector('.Sherrill').classList.remove('cityopen');
+    document.querySelector('.canandaigua').classList.add('cityopen');
+    document.querySelector('.contacts-accordeon').classList.add('cityopen-acc');
+    document.querySelector('.contacts-accordeon-text').innerHTML = 'Canandaigua, NY';
+};
+
+function NewYorkOpen() {
+    document.querySelector('.canandaigua').classList.remove('cityopen');
+    document.querySelector('.Yonkers').classList.remove('cityopen');
+    document.querySelector('.Sherrill').classList.remove('cityopen');
+    document.querySelector('.NewYork').classList.add('cityopen');
+    document.querySelector('.contacts-accordeon').classList.add('cityopen-acc');
+    document.querySelector('.contacts-accordeon-text').innerHTML = 'New York City';
+};
+
+function YonkersOpen() {
+    document.querySelector('.canandaigua').classList.remove('cityopen');
+    document.querySelector('.NewYork').classList.remove('cityopen');
+    document.querySelector('.Sherrill').classList.remove('cityopen');
+    document.querySelector('.Yonkers').classList.add('cityopen');
+    document.querySelector('.contacts-accordeon').classList.add('cityopen-acc');
+    document.querySelector('.contacts-accordeon-text').innerHTML = 'Yonkers, NY';
+};
+
+function SherrillOpen() {
+    document.querySelector('.canandaigua').classList.remove('cityopen');
+    document.querySelector('.NewYork').classList.remove('cityopen');
+    document.querySelector('.Yonkers').classList.remove('cityopen');
+    document.querySelector('.Sherrill').classList.add('cityopen');
+    document.querySelector('.contacts-accordeon').classList.add('cityopen-acc');
+    document.querySelector('.contacts-accordeon-text').innerHTML = 'Sherrill, NY';
+};
