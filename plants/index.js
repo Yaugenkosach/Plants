@@ -91,3 +91,34 @@ function SherrillOpen() {
     document.querySelector('.contacts-accordeon').classList.add('cityopen-acc');
     document.querySelector('.contacts-accordeon-text').innerHTML = 'Sherrill, NY';
 };
+
+
+function gardenBlur() {
+    document.querySelectorAll('.Garden').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+        });
+    document.querySelectorAll('.Planting').forEach(function(section) {
+        section.classList.add('service-item-blur')
+        });
+    document.querySelector('.lown').classList.add('service-item-blur');
+};
+
+function plantingBlur() {
+    document.querySelectorAll('.Planting').forEach(function(section) {
+        section.classList.remove('service-item-blur')
+        });
+    document.querySelectorAll('.Garden').forEach(function(section) {
+        section.classList.add('service-item-blur')
+        });
+    document.querySelector('.lown').classList.add('service-item-blur');
+};
+
+function lownBlur() {
+    document.querySelector('.lown').classList.remove('service-item-blur');
+    document.querySelectorAll('.Garden').forEach(function(section) {
+        section.classList.add('service-item-blur')
+        });
+    document.querySelectorAll('.Planting').forEach(function(section) {
+        section.classList.add('service-item-blur')
+        });
+};

@@ -398,6 +398,10 @@ button:hover, .header-link:focus, .header-link:active {
   transition: all .3s linear;
 }
 
+.service-item-blur {
+  filter: blur(5px);
+}
+
 /* Service style end */
 
 /* Prices style start */
