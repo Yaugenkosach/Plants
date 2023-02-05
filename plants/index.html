@@ -94,14 +94,14 @@
                         <h2 id="service-title-text">Service and our projects</h2>
                     </div>
                     <div class="service-buttons">
-                        <button class="service-button button-gardens">Gardens</button>
-                        <button class="service-button button-lawn">Lawn</button>
-                        <button class="service-button button-planting">Planting</button>
+                        <button onclick="gardenBlur()" class="service-button button-gardens">Gardens</button>
+                        <button onclick="lownBlur()" class="service-button button-lawn">Lawn</button>
+                        <button onclick="plantingBlur()" class="service-button button-planting">Planting</button>
                     </div>
                 </div>
 
                 <div class="service-items">
-                    <div class="service-item item1">
+                    <div class="service-item item1 Garden">
                         <div class="img-item1">
                             <img src="img/item1.png" alt="item1" class="item-pic item-pic1">
                         </div>
@@ -110,7 +110,7 @@
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="service-item item2">
+                    <div class="service-item item2 Planting">
                         <div class="img-item2">
                         <img src="img/item2.png" alt="item2" class="item-pic">
                         </div>
@@ -119,7 +119,7 @@
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="service-item item3">
+                    <div class="service-item item3 lown">
                         <div class="img-item3">
                         <img src="img/item3.png" alt="item3" class="item-pic">
                         </div>
@@ -128,7 +128,7 @@
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="service-item item4">
+                    <div class="service-item item4 Planting">
                         <div class="img-item4">
                         <img src="img/item4.png" alt="item4" class="item-pic">
                         </div>
@@ -137,7 +137,7 @@
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="service-item item5">
+                    <div class="service-item item5 Garden">
                         <div class="img-item5">
                         <img src="img/item5.png" alt="item5" class="item-pic">
                         </div>
@@ -146,7 +146,7 @@
                             <p class="service-item-text">Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="service-item item6">
+                    <div class="service-item item6 Planting">
                         <div class="img-item6">
                         <img src="img/item6.png" alt="item6" class="item-pic">
                         </div>
@@ -166,15 +166,59 @@
                         <h2 id="prices-content-title-text">Prices</h2>
                     </div>
                     <div class="prices-content-items">
-                        <details class="prices-accordeon prices-accordeon-1">
-                            <summary class="prices-accordeon-title">Basics</summary>
-                        </details>
-                        <details class="prices-accordeon">
-                            <summary class="prices-accordeon-title">Standard</summary>
-                        </details>
-                        <details class="prices-accordeon prices-accordeon-3">
-                            <summary class="prices-accordeon-title">Pro care</summary>
-                        </details>
+                        <div class="prices-accordeon-section">
+                            <div class="accordeon-header">
+                                <p class="accordeon-header-title">Basics</p>
+                                <img src="img/accordion_btn.png" alt="accordion_btn" class="accordeon-button-ico">
+                            </div>
+                            <div class="accordeon-body">
+                                <div class="accordeon-body-content">
+                                    <p class="accordeon-body-content-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                </div>
+                                <div class="accordeon-body-price">
+                                    <p id="accordeon-body-price-text"><span id="dollar-orange">$<span id="price-orange">15</span></span> / per hour</p>
+                                </div>
+                                <div class="accordeon-body-button">
+                                    <a href="#contacts" class="accordeon-body-button-text">Order </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prices-accordeon-section">
+                            <div class="accordeon-header">
+                                <p class="accordeon-header-title">Standard</p>
+                                <img src="img/accordion_btn.png" alt="accordion_btn" class="accordeon-button-ico">
+                            </div>
+                            <div class="accordeon-body">
+                                <div class="accordeon-body-content">
+                                    <p class="accordeon-body-content-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                </div>
+                                <div class="accordeon-body-price">
+                                    <p id="accordeon-body-price-text"><span id="dollar-orange">$<span id="price-orange">25</span></span> / per hour</p>
+                                </div>
+                                <div class="accordeon-body-button">
+                                    <a href="#contacts" class="accordeon-body-button-text">Order </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prices-accordeon-section">
+                            <div class="accordeon-header">
+                                <p class="accordeon-header-title">Pro care</p>
+                                <img src="img/accordion_btn.png" alt="accordion_btn" class="accordeon-button-ico">
+                            </div>
+                            <div class="accordeon-body">
+                                <div class="accordeon-body-content">
+                                    <p class="accordeon-body-content-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                </div>
+                                <div class="accordeon-body-price">
+                                    <p id="accordeon-body-price-text"><span id="dollar-orange">$<span id="price-orange">35</span></span> / per hour</p>
+                                </div>
+                                <div class="accordeon-body-button">
+                                    <a href="#contacts" class="accordeon-body-button-text">Order </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="prices-call">
@@ -200,9 +244,93 @@
                     <h2 class="contacts-title-text">Contact us</h2>
                 </div>
                 <div class="contacts-content">
-                    <details class="contacts-accordeon">
+                    <div class="contacts-accordeon">
                         <summary class="contacts-accordeon-text">City</summary>
-                    </details>
+                        <div class="city-container">
+                            <ul class="city-list">
+                                <li onclick="CanandaiguaOpen()" class="city-item">
+                                    <span class="city-link canandaigua-city">Canandaigua, NY</span>
+                                </li>
+                                <li onclick="NewYorkOpen()" class="city-item">
+                                    <span class="city-link">New York City</span>
+                                </li>
+                                <li onclick="YonkersOpen()" class="city-item">
+                                    <span class="city-link">Yonkers, NY</span>
+                                </li>
+                                <li onclick="SherrillOpen()" class="city-item">
+                                    <span class="city-link">Sherrill, NY</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="city-info canandaigua">
+                        <div class="city-info-items">
+                            <div class="city-info-key">
+                                <div>City:</div>
+                                <div>Phone:</div>
+                                <div>Office adress:</div>
+                            </div>
+                            <div class="city-info-value">
+                                <div>Canandaigua, NY</div>
+                                <div>+1	585	393 0001</div>
+                                <div>151 Charlotte Street</div>
+                            </div>
+                        </div>
+                        <button class="city-info-btn">
+                            <a href="tel:+15853930001" class="city-info-number">Call us</a>
+                        </button>
+                    </div>
+                    <div class="city-info NewYork">
+                        <div class="city-info-items">
+                            <div class="city-info-key">
+                                <div>City:</div>
+                                <div>Phone:</div>
+                                <div>Office adress:</div>
+                            </div>
+                            <div class="city-info-value">
+                                <div>New York City</div>
+                                <div>+1	212	456 0002</div>
+                                <div>9 East 91st Street</div>
+                            </div>
+                        </div>
+                        <button class="city-info-btn">
+                            <a href="tel:+12124560002" class="city-info-number">Call us</a>
+                        </button>
+                    </div>
+                    <div class="city-info Yonkers">
+                        <div class="city-info-items">
+                            <div class="city-info-key">
+                                <div>City:</div>
+                                <div>Phone:</div>
+                                <div>Office adress:</div>
+                            </div>
+                            <div class="city-info-value">
+                                <div>Yonkers, NY</div>
+                                <div>+1	914	678 0003</div>
+                                <div>511 Warburton Ave</div>
+                            </div>
+                        </div>
+                        <button class="city-info-btn">
+                            <a href="tel:+19146780003" class="city-info-number">Call us</a>
+                        </button>
+                    </div>
+                    <div class="city-info Sherrill">
+                        <div class="city-info-items">
+                            <div class="city-info-key">
+                                <div>City:</div>
+                                <div>Phone:</div>
+                                <div>Office adress:</div>
+                            </div>
+                            <div class="city-info-value">
+                                <div>Sherrill, NY</div>
+                                <div>+1	315	908 0004</div>
+                                <div>14 WEST Noyes BLVD</div>
+                            </div>
+                        </div>
+                        <button class="city-info-btn">
+                            <a href="tel:+13159080004" class="city-info-number">Call us</a>
+                        </button>
+                    </div>
                 </div>
                 <div class="contacts-pic-tablet"></div>
             </div>

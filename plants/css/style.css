@@ -398,6 +398,10 @@ button:hover, .header-link:focus, .header-link:active {
   transition: all .3s linear;
 }
 
+.service-item-blur {
+  filter: blur(5px);
+}
+
 /* Service style end */
 
 /* Prices style start */
@@ -421,7 +425,7 @@ button:hover, .header-link:focus, .header-link:active {
   padding-top: 8px;
 }
 
-.prices-content-title-text {
+#prices-content-title-text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -479,13 +483,116 @@ summary:before {
  transition: transform .3s;
 }
 
-details[open] > summary:before {
+.accordeon-button-ico:active {
  transform: scale(1,-1);
 }
 
 .prices-accordeon[open] > summary {
   border-radius: 20px;
   background: #D6E7D2;
+}
+
+.accordeon-header {
+  padding: 0 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 50px;
+  background: #EDF2EC;
+  border-radius: 20px;
+  Font-family: Inter;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.accordeon-header:focus, .accordeon-header:hover, .accordeon-header:active {
+  cursor: pointer;
+  background: #D6E7D2;
+  transition: all .3s linear;
+}
+
+.accordeon-body {
+  display: none;
+  width: 250px;
+  height: 154px;
+  background: #D6E7D2;
+  border-radius: 20px;
+  margin-top: -50px;
+  padding: 44px 47px 13px 39px;
+}
+
+.opened .accordeon-body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accordeon-body-content {
+  border-top: 0.5px solid #AEA1A1;
+}
+
+.accordeon-body-content-text {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+  margin: 7px 0;
+}
+
+#accordeon-body-price-text {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  margin: -9px 0 0 0;
+}
+
+#dollar-orange {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #E06733;
+}
+
+#price-orange {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E06733;
+}
+
+.accordeon-body-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.accordeon-body-button:focus, .accordeon-body-button:hover, .accordeon-body-button:active {
+  cursor: pointer;
+  background: #EDF2EC;
+  transition: all .1s linear;
+}
+
+.accordeon-body-button-text {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #717171;
+  padding-right: 9px;
 }
 
 details{
@@ -611,10 +718,157 @@ details{
   color: #717171;
  }
 
- .contacts-accordeon[open] > summary {
+ .active .contacts-accordeon-text {
   border-radius: 0px;
   background: #C1E698;
 }
+
+.active .contacts-accordeon {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.active .contacts-accordeon-text:before {
+  right: 34px;
+  top: 17px;
+  background: url("/yaugenkosach-JSFEPRESCHOOL2022Q4/plants/img/drop_btn.png") no-repeat 100% 100% / 16px 16px;
+  width: 16px;
+  height: 16px;  
+  content: "";
+  position: absolute;
+  transition: transform .3s;
+ }
+
+ .city-container {
+  position: relative;
+  top: -12px;
+  display: none;
+  flex-direction: column;
+  padding-right: 49px;
+  padding-left: 21px;
+  padding-top: 13px;
+  background-color: #DCE9D9;
+ }
+
+ .active .city-container {
+  display: flex;
+ }
+
+ .city-list {
+  list-style-type: none;
+  padding: 0 0 0 6px;
+ }
+
+ .city-link {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #499A18;
+ }
+
+ .city-link:hover, .city-link:focus {
+  color: #717171;
+  cursor: pointer;
+}
+
+ .city-item {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 6px;
+ }
+
+ .canandaigua {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .NewYork {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .Yonkers {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .Sherrill {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding-top: 16px;
+  margin-top: 47px;
+  padding-bottom: 30px;
+ }
+
+ .cityopen {
+  display: flex;
+ }
+
+ .cityopen-acc {
+  background: #C1E698;
+ }
+
+ .city-info-key {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #000000;
+  padding-right: 20px;
+ }
+
+ .city-info-value {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #717171;
+ }
+
+ .city-info-items {
+  display: flex;
+  justify-content: center;
+  padding-right: 87px;
+  padding-bottom: 20px;
+ }
+
+ .city-info-btn {
+  width: 122px;
+  height: 26px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  background-color: #EDF2EC;
+ }
+
+ .city-info-number {
+  text-decoration: none;
+  font-family: 'Inika';
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  color: #717171;
+ }
 
 /* Contacts style end */
 
