@@ -40,6 +40,7 @@
 
 }())
 
+
 (function () {
     const contactsAccordeon = document.querySelector('.contacts-accordeon');
     contactsAccordeon.addEventListener('click', () => {
@@ -94,31 +95,83 @@ function SherrillOpen() {
 
 
 function gardenBlur() {
-    document.querySelectorAll('.Garden').forEach(function(section) {
+
+    if (document.querySelector('.button-gardens').classList.contains('service-button-active')) {
+        document.querySelector('.button-gardens').classList.remove('service-button-active');
+        document.querySelectorAll('.service-item').forEach(function(section) {
             section.classList.remove('service-item-blur')
         });
-    document.querySelectorAll('.Planting').forEach(function(section) {
+    } else if (document.querySelector('.button-planting').classList.contains('service-button-active') && document.querySelector('.button-lawn').classList.contains('service-button-active')) {
+        document.querySelectorAll('.service-button').forEach(function(section) {
+            section.classList.remove('service-button-active')
+        });
+        document.querySelectorAll('.service-item').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+        });
+    } else {
+        document.querySelector('.button-gardens').classList.add('service-button-active');
+        document.querySelectorAll('.Garden').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+        });
+        document.querySelectorAll('.Planting').forEach(function(section) {
         section.classList.add('service-item-blur')
         });
-    document.querySelector('.lown').classList.add('service-item-blur');
+        document.querySelector('.lown').classList.add('service-item-blur');
+    }
+
+    
 };
 
 function plantingBlur() {
-    document.querySelectorAll('.Planting').forEach(function(section) {
-        section.classList.remove('service-item-blur')
+
+    if (document.querySelector('.button-planting').classList.contains('service-button-active')) {
+        document.querySelector('.button-planting').classList.remove('service-button-active');
+        document.querySelectorAll('.service-item').forEach(function(section) {
+            section.classList.remove('service-item-blur')
         });
-    document.querySelectorAll('.Garden').forEach(function(section) {
-        section.classList.add('service-item-blur')
+    } else if (document.querySelector('.button-gardens').classList.contains('service-button-active') && document.querySelector('.button-lawn').classList.contains('service-button-active')) {
+        document.querySelectorAll('.service-button').forEach(function(section) {
+            section.classList.remove('service-button-active')
         });
-    document.querySelector('.lown').classList.add('service-item-blur');
+        document.querySelectorAll('.service-item').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+        });
+    } else {
+        document.querySelector('.button-planting').classList.add('service-button-active');
+        document.querySelectorAll('.Planting').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+            });
+        document.querySelectorAll('.Garden').forEach(function(section) {
+            section.classList.add('service-item-blur')
+            });
+        document.querySelector('.lown').classList.add('service-item-blur');
+    }
 };
 
 function lownBlur() {
-    document.querySelector('.lown').classList.remove('service-item-blur');
-    document.querySelectorAll('.Garden').forEach(function(section) {
+
+    if (document.querySelector('.button-lawn').classList.contains('service-button-active')) {
+        document.querySelector('.button-lawn').classList.remove('service-button-active');
+        document.querySelectorAll('.service-item').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+        });
+    } else if (document.querySelector('.button-gardens').classList.contains('service-button-active') && document.querySelector('.button-planting').classList.contains('service-button-active')) {
+        document.querySelectorAll('.service-button').forEach(function(section) {
+            section.classList.remove('service-button-active')
+        });
+        document.querySelectorAll('.service-item').forEach(function(section) {
+            section.classList.remove('service-item-blur')
+        });
+    } else {
+        document.querySelector('.button-lawn').classList.add('service-button-active');
+        document.querySelector('.lown').classList.remove('service-item-blur');
+        document.querySelectorAll('.Garden').forEach(function(section) {
         section.classList.add('service-item-blur')
         });
-    document.querySelectorAll('.Planting').forEach(function(section) {
+        document.querySelectorAll('.Planting').forEach(function(section) {
         section.classList.add('service-item-blur')
         });
+    }
+
+    
 };
